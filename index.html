@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="stylesheet" href="style.css">
+
+    <title>第五人格 BAN/PICK</title>
+</head>
+
+<body>
+
+    <!-- 最初の画面 -->
+    <div id="setupScreen">
+
+        <h1>第五人格 BAN / PICK</h1>
+
+        <p>大会BAN/PICK管理システム</p>
+
+        <h2>試合設定</h2>
+
+        <label for="boNumber">BOを選択：</label>
+
+       <select id="boNumber">
+    <option value="">選択してください</option>
+    <option value="BO1">BO1</option>
+    <option value="BO2">BO2</option>
+    <option value="BO3">BO3</option>
+    <option value="BO4">BO4</option>
+    <option value="BO5">BO5</option>
+</select>
+
+        <br><br>
+
+        <button id="startMatch">
+            試合開始
+        </button>
+
+    </div>
+
+
+    <!-- BAN/PICK画面 -->
+    <div id="banPickScreen" style="display: none;">
+
+        <h1>第五人格 BAN / PICK</h1>
+
+        <h2 id="matchTitle"></h2>
+
+        <h2 id="gameTitle"></h2>
+
+        <h3 id="phaseTitle"></h3>
+
+        <p id="phaseDescription"></p>
+
+        <p id="selectionStatus"></p>
+
+        <hr>
+
+        <h2>キャラクター</h2>
+
+        <div id="characterList"></div>
+
+        <br>
+
+        <button id="backButton">
+            1つ戻す
+        </button>
+
+        <button id="resetButton">
+            試合をリセット
+        </button>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
